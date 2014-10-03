@@ -1,6 +1,20 @@
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="/css/course/page.css"  />
 <script type="text/javascript" src="/js/jquery.js"></script>
 <script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+=======
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Add Page</title>
+<link rel="stylesheet" type="text/css" href="/css/course/page.css"  />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 	<?php if ($info==FALSE):?>
 	<form action="<?php echo site_url('course/'.$cid.'/page/create');?>" method="post">
         <p>Title</p>
@@ -40,4 +54,10 @@
         <input type="submit" value="submit"  />
     </form>
     <a href="<?php echo site_url('course/'.$cid.'/page/'.$info['id'].'/delete');?>">DELETE</a>
+<<<<<<< HEAD
     <?php endif;?>
+=======
+    <?php endif;?>
+</body>
+</html>
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9

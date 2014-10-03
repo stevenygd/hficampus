@@ -10,7 +10,11 @@ class ulibrary extends SAE_Controller {
 	
 	public function index()
 	{
+<<<<<<< HEAD
 		if (time()-mktime(0,0,0,1,16,2014) < 0){
+=======
+		if (time()-mktime(0,0,0,4,9,2014) < 0){
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 			$this->load->view('ulibrary/countdown');
 		}else{
 			$this->load->library('user_agent');

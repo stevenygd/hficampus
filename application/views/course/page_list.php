@@ -1,5 +1,17 @@
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="/css/course/list.css" />
 <title>Page List</title>
+=======
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/css/course/list.css" />
+<title>Page List</title>
+</head>
+
+<body>
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
     <h1>Pages</h1>
     <?php if (is_array($page_list) && (count($page_list)>0)):?>
 		<?php foreach($page_list as $i => $item):?>
@@ -14,4 +26,10 @@
         <?php endforeach;?>
     <?php else:?>
     	<p>No pages yet</p>
+<<<<<<< HEAD
 	<?php endif;?>
+=======
+    <?php endif;?>
+</body>
+</html>
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9

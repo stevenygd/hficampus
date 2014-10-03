@@ -15,6 +15,7 @@ class User extends CI_Model {
 		//check login
 		if ($this->session->userdata('login')===TRUE)
 		{
+<<<<<<< HEAD
 			// 已经成功登陆
 			$this->id = $this->session->userdata('uid');
 						
@@ -32,6 +33,9 @@ class User extends CI_Model {
 			);
 			$this->input->set_cookie($cookie);
 			
+=======
+			$this->id = $this->session->userdata('uid');// 已经成功登陆
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 			//check permission
 			$this->load->library('auth',$this->id);
 			if (! $this->auth->get_permission())
@@ -69,7 +73,11 @@ class User extends CI_Model {
 				redirect(site_url('account'));//回到登陆页面
 			}
 		}
+<<<<<<< HEAD
 	}
+=======
+	}	
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 	
 	/*******************************
 	* Return Ramdom Key(For login) 	返回随机数列
@@ -845,17 +853,24 @@ class User extends CI_Model {
 	*******************************/
 	function get_info($uid)
 	{
+<<<<<<< HEAD
 		// check permission @todo 
 		// invalidate permission check by Steven Yang(who follows Ryan's advice)
 		// 2014-4-23
 		/*
+=======
+		//check permission @todo
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 		if ($uid!=$this->id)
 		{
 			$this->auth->set('l--r-','all',0,'all',0);
 			if (! $this->auth->get_permission())
 				return $this->err(700,'No permission!');
 		}
+<<<<<<< HEAD
 		*/
+=======
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 
 		/*获取信息*/
 		$this->db->trans_begin();
@@ -920,7 +935,10 @@ class User extends CI_Model {
 			$list[$item['uid']]['cnfn']=$item['cnfn'];
 			$list[$item['uid']]['cnln']=$item['cnln'];
 			$list[$item['uid']]['enn']=$item['enn'];
+<<<<<<< HEAD
 			$list[$item['uid']]['uid']=$item['uid'];
+=======
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 			//$appendix=unserialize($item['appendix']);
 			//$list[$item['uid']]['appendix']=$appendix;
 

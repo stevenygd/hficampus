@@ -13,12 +13,20 @@
  * @access public
  */
 class Aca_page extends SAE_Model {
+<<<<<<< HEAD
 	
     public function __construct() {
         parent::__construct();
         $this->tableName = 'aca_page';
         $this->subContent['tableName'] = 'aca_page_comment';
         $this->subContent['associatedKey'] = 'pid';
+=======
+    public function __construct() {
+        parent::__construct();
+        $this->_options['tableName'] = 'aca_page';
+        $this->_options['subContent']['tableName'] = 'aca_page_comment';
+        $this->_options['subContent']['associatedKey'] = 'pid';
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
     }
     
     /**
@@ -38,6 +46,7 @@ class Aca_page extends SAE_Model {
             return FALSE;
         }
 		
+<<<<<<< HEAD
 		$this->db->join('aca','aca.id='.$this->tableName.'.cid');
 		$this->db->join('user_info','user_info.uid='.$this->tableName.'.auth');
         $result = parent::find($where, 'aca.name,aca.gid,
@@ -48,6 +57,18 @@ class Aca_page extends SAE_Model {
 										.$this->tableName.'.cid,'
 										.$this->tableName.'.auth,'
 										.$this->tableName.'.id',
+=======
+		$this->db->join('aca','aca.id='.$this->_options['tableName'].'.cid');
+		$this->db->join('user_info','user_info.uid='.$this->_options['tableName'].'.auth');
+        $result = parent::get_list($where, 'aca.name,aca.gid,
+											user_info.enn,user_info.cnfn, user_info.cnln,'
+											.$this->_options['tableName'].'.title,'
+											.$this->_options['tableName'].'.created_time,'
+											.$this->_options['tableName'].'.latest_update,'
+											.$this->_options['tableName'].'.cid,'
+											.$this->_options['tableName'].'.auth,'
+											.$this->_options['tableName'].'.id',
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 								   $order, $lim, $off);
         if ($result) {
             return $result;
@@ -154,6 +175,7 @@ class Aca_page extends SAE_Model {
         if (is_numeric($id))//check input
         {
 			$this->db->select('aca.name, aca.gid,'
+<<<<<<< HEAD
 							  .$this->tableName.'.*,'
 							  .'user_info.cnfn, user_info.cnln, user_info.enn');
 			$this->db->join('aca','aca.id='.$this->tableName.'.cid');
@@ -169,6 +191,23 @@ class Aca_page extends SAE_Model {
                 'page' => parent::read(array('id' => $id)),
                 'comment' => parent::get_subContent_list(array(
                     ($this->subContent['associatedKey']) => $id
+=======
+							  .$this->_options['tableName'].'.*,'
+							  .'user_info.cnfn, user_info.cnln, user_info.enn');
+			$this->db->join('aca','aca.id='.$this->_options['tableName'].'.cid');
+			$this->db->join('user_info','user_info.uid='.$this->_options['tableName'].'.auth');
+			$result['page']=parent::read(array($this->_options['tableName'].'.id' => $id));
+			
+			$this->db->select($this->_options['subContent']['tableName'].'.*,'
+							  .'user_info.cnfn, user_info.cnln, user_info.enn');
+			$this->db->join('user_info','user_info.uid='.$this->_options['subContent']['tableName'].'.auth');
+			$result['comment']=parent::get_subContent_list(array(
+                    ($this->_options['subContent']['associatedKey']) => $id));
+/*			$result = array(
+                'page' => parent::read(array('id' => $id)),
+                'comment' => parent::get_subContent_list(array(
+                    ($this->_options['subContent']['associatedKey']) => $id
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
                 ))
             );
 */
@@ -230,8 +269,13 @@ class Aca_page extends SAE_Model {
 					'time'=>date('y-m-d H:i:s',time()),
 					'text'=>$text
 					);
+<<<<<<< HEAD
         $this->subContent['tableName'] = 'aca_page_comment';
         $this->subContent['associatedKey'] = 'pid';
+=======
+        $this->_options['subContent']['tableName'] = 'aca_page_comment';
+        $this->_options['subContent']['associatedKey'] = 'pid';
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 		$add=parent::add_subContent($data);
 		if ($add!==FALSE)
 			return $add;

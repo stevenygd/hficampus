@@ -31,9 +31,13 @@ class Course_page extends SAE_Controller {
 						$a['course_name']=$info['page']['name'];
 					}
 					$a['cid']=$mid;
+<<<<<<< HEAD
 					//$this->push('course/editpage',$a);
 					//test
 					$this->push(NULL,$a);
+=======
+					$this->push('course/editpage',$a);
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 				break;
 				default:
 					if (is_numeric($nid))
@@ -48,9 +52,13 @@ class Course_page extends SAE_Controller {
 							$a['pid']=$nid;
 							$a['gid']=$info['page']['gid'];
 							$a['course_name']=$info['page']['name'];
+<<<<<<< HEAD
 							//test
 							$this->push(NULL,$a);
 							//$this->push('course/page',$a);
+=======
+							$this->push('course/page',$a);
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 							//$a['page'],$a['comment']
 						}
 					}

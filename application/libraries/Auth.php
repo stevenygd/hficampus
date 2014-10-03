@@ -207,9 +207,14 @@ class Auth
 						
 			//update cache
 			//kvdb version
+<<<<<<< HEAD
 			if (! $this->kv->set($this->id.':auth:'.$uri,$cache)){
 				log_message('error',"KVDB failed to update cache.".$this->kv->errno().';'.$this->kv->errmsg());			
 			}
+=======
+			if (! $this->kv->set($this->id.':auth:'.$uri,$cache))
+				throw new MY_Exception("KVDB failed!");			
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 			
 			//return result
 			if ($this->str_ck($cache,$this->op))

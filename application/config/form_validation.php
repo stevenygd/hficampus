@@ -25,7 +25,11 @@ $config = array(
         array(
             'field'   =>  'uname', 
             'label'   =>  'user name', 
+<<<<<<< HEAD
             'rules'   =>  'trim|required|min_length[5]|max_length[12]|alpha_numeric'
+=======
+            'rules'   =>  'trim|required|min_length[5]|max_length[12]'
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
         ),
         array(
             'field'   =>  'pw', 

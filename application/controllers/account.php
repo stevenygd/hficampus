@@ -14,7 +14,10 @@ class Account extends SAE_Controller {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->uid = $this->user->id;
+<<<<<<< HEAD
         $this->layout = 'account';
+=======
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 	}
 	
 	/*
@@ -591,7 +594,11 @@ class Account extends SAE_Controller {
 		$ulist['length']=count($ulist);
 		$this->push(NULL,$ulist);
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 }
 
 /* End of file account.php */

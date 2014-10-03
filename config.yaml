@@ -2,4 +2,9 @@ name: codeigniter4sae
 version: 1
 # URL÷ÿ–¥
 handle:
+<<<<<<< HEAD
 - rewrite: if(!is_dir() && !is_file() && path ~ "/") goto "/index.php?%{QUERY_STRING}"
+=======
+- rewrite: if(!is_dir() && !is_file() && path ~ "/") goto "/index.php?%{QUERY_STRING}"
+	
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9

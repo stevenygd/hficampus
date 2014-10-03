@@ -51,7 +51,11 @@ textarea {
 	
 #add_events {
 	position: absolute;
+<<<<<<< HEAD
 	left: 230px;
+=======
+	left: 190px;
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 	}
 	
 #add_form {

@@ -280,7 +280,11 @@ $config['cookie_secure']	= FALSE;
 | COOKIE data is encountered
 |
 */
+<<<<<<< HEAD
 $config['global_xss_filtering'] = TRUE;
+=======
+$config['global_xss_filtering'] = FALSE;
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 
 /*
 |--------------------------------------------------------------------------

@@ -16,6 +16,7 @@ class Test extends SAE_Controller {
 		{
 			switch($mid)
 			{
+<<<<<<< HEAD
 				case 'test_channel':
 					var_dump($this->channel);
 				break;
@@ -25,6 +26,8 @@ class Test extends SAE_Controller {
 				case 'test_channel_readonlinelist':
 					var_dump($this->channel->rChannelOnline());
 				break;
+=======
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 				case 'synall':
 					$this->db->select('id');
 					$users=$this->db->get_where('user')->result_array();

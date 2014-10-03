@@ -8,7 +8,11 @@ class Aca extends SAE_Model {
 	function __construct()
 	{
 		parent::__construct();
+<<<<<<< HEAD
 		$this->tableName = 'aca';
+=======
+		$this->_options['tableName'] = 'aca';
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 	}
 	
 	/*Basic course actions*/

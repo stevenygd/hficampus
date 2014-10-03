@@ -1,4 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<<<<<<< HEAD
 /**
  * CORE Controller by StevenY.
  * @version 2.0
@@ -31,10 +32,16 @@ class SAE_Controller extends CI_Controller {
 	private $_data_guessable = array('uid','mtype','ntype');
 
 	protected $kv = NULL;
+=======
+/*CORE Controller by StevenY.*/
+class SAE_Controller extends CI_Controller {
+	var $_output = array();
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 	
 	function __construct()
 	{
 		parent::__construct();
+<<<<<<< HEAD
 		
 		//initialize
 		$this->uid = $this->user->id;//@todo
@@ -224,5 +231,35 @@ class SAE_Controller extends CI_Controller {
 			}
 		}
  	}
+=======
+	}
+	
+	/**
+	 * Push function for loading view
+	 */
+	function push($view = NULL, $data = NULL, $redirect = FALSE)
+	{		
+		if ($this->input->is_ajax_request())
+		{
+				$this->load->library('json');
+            	$this->output->set_content_type('application/json')
+					 ->set_output($this->json->encode($data));
+		}
+		elseif ($redirect)
+			redirect($view);
+		else
+		{
+			if (isset($view))
+			{
+				if (isset($data))
+					$this->load->view($view,$data);
+				else
+					$this->load->view($view);
+			}
+			else
+				show_404();
+		}
+	}
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 	
 }

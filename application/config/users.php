@@ -27,4 +27,8 @@
 |
 */
 
+<<<<<<< HEAD
 $config['overrides'] = array('account','ulibrary','testChannel');
+=======
+$config['overrides'] = array('account','ulibrary');
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9

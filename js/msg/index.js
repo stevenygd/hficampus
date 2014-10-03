@@ -35,7 +35,11 @@ $(document).ready(function(){
 		);
 		$("#conver").fadeOut("fast",function(){
 			$("#list").fadeIn("fast");
+<<<<<<< HEAD
 			});	
+=======
+			});		
+>>>>>>> 030000420ad7bbf6d2ae738842e2f87ac09c37f9
 	});
 	
 	$("#search").keyup(function(){
