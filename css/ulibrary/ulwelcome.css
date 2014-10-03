@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+/* by LXS */
+
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+}
+
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+}
+
+body {
+	color: #0C034D;
+	font-family: light;
+	padding: 10px;
+	}
+	
+Span {
+	color: #CCC;
+	font-family: regular;
+	}

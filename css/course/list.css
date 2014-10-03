@@ -1,0 +1,78 @@
+/* CSS Document */
+/*Fonts*/
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+
+@font-face {
+	font-family: medium;
+	src:url('/font/Din/DINPro-Medium.otf');
+	}
+
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+}
+
+html, body{
+	width:100%;
+	height:100%;
+}
+
+body {
+	padding:60px 0 0;
+	margin:0;
+	color: #0C034D;
+	font-family: light,HelveticaNeue-Light;
+}
+
+h1 {
+	position: fixed;
+	z-index: 100;
+	background: white;
+	display: block;
+	margin: 0;
+	padding: 10px 30px 5px;
+	width: 100%;
+	top: 0;
+}
+
+.page, .question{
+	border: solid 1px;
+	margin: 15px 30px;
+	padding: 0 15px 0;
+	background-color: rgb(40,0,80);
+	height: 88px;
+}
+
+.page_box, .question_box{
+	text-decoration:none;
+	color:white;
+	height: auto;
+}
+
+.title{
+	font-weight: bold;
+	font-size: 14px;
+	border-bottom: solid white 1px;
+	padding: 2px 0px;
+	margin: 15px 0 0;
+}
+
+.ctime{
+	
+}
+
+.ltime{
+	position:absolute;
+	right:100px;
+}
+
+.clear{
+	float:none;
+}
+
+.inlineb{
+	display:inline-block;
+}

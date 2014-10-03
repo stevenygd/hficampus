@@ -1,0 +1,13 @@
+/* CSS Document */
+.hide{
+	display:none;
+}
+
+.inline{
+	display:inline-block;
+}
+
+.group_member_list{
+	border:solid 1px;
+}
+

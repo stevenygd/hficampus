@@ -1,0 +1,98 @@
+/* CSS Document */
+/* by LXS */
+
+@font-face{
+	font-family: bold;
+	src:url('/font/Din/DINPro-Bold.otf');
+	}
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+@font-face {
+    font-family: medium;
+    src:url('/font/Din/DINPro-Medium.otf');
+    }
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+	}
+	
+body {
+	color: #0C034D;
+	padding: 50px;
+	}
+
+#conver {
+	display: none;
+	}
+
+iframe {
+	float: left;
+	}
+
+h3 {
+	font-family: light;
+	}
+
+span {
+	font-family: bold;
+	}
+
+h1 {
+	font-family: regular;
+	margin: 0px;
+	}
+	
+.button {
+	width: 350px;
+	text-align: right;
+	}
+	
+#list {
+	float: left;
+	width: 160px;
+	display: none;
+	color: white;
+	background-color: #CCC;
+	height: 350px;
+	margin: 0 10px;
+	}
+	
+#text {
+	float: left;
+	display: none;
+	height: 350px;
+	width: 230px;
+	margin: 0 10px;
+	}
+	
+#search {
+	width: 140px;
+	margin:0 6px;
+	border-radius:10px;
+	}	
+
+.name {
+	font-family: light;
+	cursor: pointer;
+	color: white;
+	}
+
+.name > p {
+	margin: 0 20px;
+	}
+	
+
+span {
+	font-family: medium;
+	}
+	
+.button > p {
+	display: inline-block;
+	font-family: regular;
+	margin: 0;
+	font-size: 13px;
+	cursor: pointer;
+	}
+

@@ -1,0 +1,204 @@
+
+/* CSS Document */
+/*by LXS*/
+
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+
+@font-face {
+	font-family: medium;
+	src:url('/font/Din/DINPro-Medium.otf');
+	}
+
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+	}
+
+body {
+	padding:50px;
+	color: #0C034D;
+	font-family: light;
+	}
+
+h1,p {
+	text-decoration:none;
+	margin: 0px;
+	}
+
+h3 {
+	color: #0C034D;
+	}
+
+span {
+	font-family: medium;
+	}
+	
+h1 {
+	color: #0C034D;
+	font-family: regular;
+	}
+	
+a {
+	text-decoration: none;
+	color: #0C034D;
+	}
+
+.box {
+	width: 175px;
+	height: 175px;
+	float: left;
+	background-color: #0C034D;
+	color: white;
+	margin: 2.5px;
+	cursor: pointer;
+	padding: 15px 15px 0 0;
+	position: relative;
+	}
+		
+.list {
+	width: 270px;
+	height: 350px;
+	background-color: #B1B1B1;
+	display: none;
+	text-decoration: none;
+	float: left;
+	margin: 2.5px;
+	color: #0C034D;
+	position: relative;
+	overflow: hidden;
+	}
+
+.label {
+	text-align: right;
+	margin: 0px;
+	font-size: 17px;
+	}
+	
+.count {
+	font-size: 160px;
+	margin: -35px 0px 0px -8px;
+	}
+
+.triangle {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border: 25px solid #000;
+	border-color: transparent white white transparent;
+	right: 0px;
+	bottom: 0px;
+	}
+	
+.triangle2 {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border: 25px solid #000;
+	border-color: white white transparent transparent;
+	right: 0px;
+	top: 0px;
+	}
+	
+.block {
+	margin: 15px 10px;
+	}
+	
+ .name {
+	 cursor: pointer;
+	 }
+	 
+.author {
+	color: white;
+	font-size: 14px;
+	}
+
+.create {
+	width: 70px;
+	height: 85px;
+	display: block;
+	margin: 170px 0px 0px 365px;
+	position: absolute;
+	cursor: pointer;
+	}
+
+.create > p {
+	position: relative;
+	left: 38px;
+	top: -11px;
+	}
+	
+.apply {
+	display: none;
+	}
+
+.apply > p {
+	font-size: 10px;
+	}
+	
+.new {
+	display: none;
+	background-color: white;
+	}
+
+.new > form {
+	padding: 5px;
+	position: relative;
+	}
+	
+.new > form > p {
+	margin: 5px 0 5px 0;
+	}
+	
+.cname {
+	width: 96%;
+	border: none;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	}
+	
+.new > form > textarea {
+	width: 96%;
+	height: 100px;
+	border: none;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	}
+	
+.submit {
+	margin: 10px 0 0 208px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	}
+
+/*Added Tags functions*/
+#search{
+	margin: 7px;
+}
+
+#sort {
+	display:none;
+}
+
+#cancel_search{
+	display:none;
+}
+
+.status{
+	display:none;
+}
+
+.tag{
+	text-decoration:none;
+	display:inline-block;
+	margin:3px 5px;
+	background-color:rgb(177,177,177);
+	color:white;
+}
+
+.tag_clicked{
+	background-color:rgb(12,3,77);
+	color:white;
+}
+

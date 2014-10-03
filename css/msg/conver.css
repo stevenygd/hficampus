@@ -1,0 +1,131 @@
+/* CSS Document */
+/* by LXS */
+
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+	
+@font-face {
+    font-family: medium;
+    src:url('/font/Din/DINPro-Medium.otf');
+    }
+	
+html, body {
+	font-family: light;
+	position: relative;
+	width: 98%;
+	}
+
+.msgbox {
+	padding: 5px 0;
+	position: relative;
+	}
+
+.msg {
+	display: inline-block;
+	padding: 5px;
+	max-width: 264px;
+	}
+		
+.sent {
+	color: white;
+	text-align: right;
+	}
+
+.sent > .msg {
+	background-color: #0C034D;
+	}
+		
+.receive {
+	color: #0C034D;
+	text-align: left;
+	}
+	
+.receive > .msg {
+	background-color: #CCC;
+	}
+	
+h2 {
+	margin: 0px;
+	color: #CCC;
+	}
+	
+span {
+	font-family: medium;
+	}
+	
+.contend {
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+	width: 100%;
+	background-color: white;
+	}
+	
+.page {
+	margin: 45px 0 0 0;
+	position: relative;
+	width: 100%;
+	}
+
+p {
+	margin: 0px;
+	font-size: 13px;
+	text-align: left;
+	}
+	
+.time {
+	font-size: 8px;
+	font-family: medium;
+	}
+	
+.receive > .time {
+	color: #CCC;
+	}
+	
+.sent > .time {
+	color: #0C034D;
+	text-align: right;
+	}
+
+.text {
+	width: 98%;
+	height: 150px;
+	border: none;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	}
+
+#send {
+	display: none;
+	position: fixed;
+	bottom: 2px;
+	width: 97%;
+	z-index: 1;
+	}
+	
+.reply {
+	color: #CCC;
+	position: fixed;
+	bottom: -4px;
+	width: 96%;
+	}
+	
+.reply > input {
+	margin: 0 0 0 85%;
+	
+	}
+	
+input {
+	background-color: transparent;
+	border: none;
+	color: #CCC;
+	cursor: pointer;
+	}
+	
+.submit {
+	color: #0C034D;
+	position: absolute;
+	right: 2px;
+	bottom: 0px;
+	}

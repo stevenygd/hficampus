@@ -1,0 +1,84 @@
+
+/* CSS Document */
+/*by LXS*/
+
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+	}
+
+@font-face {
+	font-family: medium;
+	src:url('/font/Din/DINPro-Medium.otf');
+	}
+	
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+
+body {
+	padding:50px;
+	color: #0C034D;
+	font-family: light;
+	}
+
+h1,p {
+	text-decoration:none;
+	margin: 0px;
+	}
+	
+h1 {
+	color: #0C034D;
+	font-size: 27px;
+	}
+	
+h3 > span{
+	font-family: medium;
+	}
+
+#boxes{
+	width:630px;
+}
+	
+a {
+	text-decoration: none;
+	color: #0C034D;
+	}
+
+.box2 {
+	width: 175px;
+	height: 175px;
+	float: left;
+	background-color: #0C034D;
+	color: white;
+	margin: 2.5px;
+	cursor: pointer;
+	padding: 15px 15px 0 0;
+	position: relative;
+	}
+	
+.label {
+	text-align: right;
+	margin: 0px;
+	font-size: 17px;
+	}
+	
+.count {
+	font-size: 166px;
+	margin: -37px 0px 0px -8px;
+	}
+
+.triangle {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border: 25px solid #000;
+	border-color: transparent white white transparent;
+	right: 0px;
+	bottom: 0px;
+	}
+	
+#frame{
+	display:none;
+}

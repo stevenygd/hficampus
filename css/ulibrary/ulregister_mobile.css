@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+}
+
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+}
+
+
+body{
+	margin:0;
+	padding: 0 0 0 5%;
+	color: #0C034D;
+}
+
+.header{
+	color: #0C034D;
+	font-family:light;
+}
+
+#ulibrary {
+	z-index: 10;
+	font-size:55px;
+	position: relative;;
+	background: white;
+	width: 100%;
+	margin: 0;
+	padding: 3% 0;
+}
+
+#title{
+	font-size:35px;
+	display: inline-block;
+}
+	
+#description {
+	position: absolute;
+}
+
+.main{
+	height: 500px;
+	width: 90%;
+}
+
+.intro{
+	display:inline-block;
+	height:100%;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+	
+#register {
+	border:none;
+	margin: 0 0 0px 60px;
+	color: #0C034D;
+	font-size:56px;
+	font-family:light;
+	cursor: pointer;
+}
+
+#enform {
+	font-size:20px;
+	font-family:light;
+}
+
+.ulemail label{
+	padding-right: 49px;
+}
+
+.sid{
+}
+
+.sid label{
+	padding-right: 7px;
+}
+
+#submit{
+	font-size:30px; 
+	border:none;
+	font-family:light;
+	color:rgb(12, 3, 77); 
+}
+
+#show{
+	font-size:30px;
+	border:none;
+	font-family:light;
+	color:rgb(12, 3, 77);
+	margin-top: 20px;
+}
+
+#close{
+	font-size: 30px;  
+	border: none;  
+	font-family: light;  
+	color: rgb(12, 3, 77);  
+	margin-top: 20px;
+}
+
+.inputbox{
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	border: none;
+}
+
+.input_unit{
+	position: relative;
+}
+
+.sidcheck{
+	width: 100%;
+	height: 50px;
+}
+.inside{
+	display: inline-block;
+	margin-right: 14px;
+	height:100%;
+}
+.inside p{
+	font-size: 18px;
+	display: block;
+	margin: 2px;
+}
+
+.sidcheck p{
+	font-size: 18px;
+	display: block;
+	margin: 2px;
+}
+
+
+#register_container {
+	position: absolute;
+}
+
+span {
+	color:#999;
+	font-family: regular;
+}
+
+
+.confirmed{
+	box-shadow: none;
+}

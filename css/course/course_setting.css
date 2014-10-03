@@ -1,0 +1,99 @@
+/*Fonts*/
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+
+@font-face {
+	font-family: medium;
+	src:url('/font/Din/DINPro-Medium.otf');
+	}
+
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+}
+
+html, body{
+	width:100%;
+	height:100%;
+}
+
+body {
+	padding:60px 0 0 30px;
+	margin:0;
+	color: #0C034D;
+	font-family: light,HelveticaNeue-Light;
+}
+
+h1 {
+	position: fixed;
+	z-index: 100;
+	background: white;
+	display: block;
+	margin: 0;
+	padding: 10px 30px 5px 0;
+	width: 100%;
+	top: 0;
+}
+
+.hide{
+	display:none;
+}
+.float_left{
+	float:left;
+}
+.inlineb{
+	display:inline-block;
+}
+#user_list{
+	border:solid 1px;
+}
+#user_wait{
+	border:solid 1px;
+}
+
+#delcourse{
+	left: 225px;
+	width: 150px;
+	background-color: red;
+	border: none;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+}
+
+.title{
+	color:#0C034D;
+	background-color:white;
+	display:block;
+	width:auto;
+	border:none;
+	font-size: 1.5em;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
+.title:hover{
+	cursor:pointer;
+}
+
+#user{
+	padding:10px 30px;
+}
+
+#user_manage{
+	width:auto;
+	border:solid 1px;
+}
+
+#user_invitation{
+	border:solid 1px;
+}
+
+#madd{
+	background-color:#0C034D;
+	border:none;
+	color:white;
+}

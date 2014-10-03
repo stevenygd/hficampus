@@ -1,0 +1,150 @@
+/* CSS Document */
+/*by LXS*/
+
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+
+body {
+	margin:0;
+	padding:80px;
+	font-family: light;
+	}
+
+h1,p {
+	text-decoration:none;
+	margin: 0px;
+	}
+	
+h1 {
+	color: #0C034D;
+	font-size: 53px;
+	}
+	
+a {
+	text-decoration: none;
+	color: #0C034D;
+	}
+
+#closeframe{
+	display:none;
+	height: 32px;
+	width: 32px;
+	position: fixed;
+	left: 787px;
+	top: 169px;
+	z-index: 100;
+	background-image: url("/images/course/close.png");
+}
+
+#closeframe:hover{
+	cursor:pointer;
+}
+
+#main{
+	width:760px;
+	position:relative;
+	height:400px;
+	overflow:hidden;
+}
+
+.arrow {
+	opacity:0;
+	background-color:transparent;
+	text-align:center;
+	color:white;
+}
+
+.arrow:hover{
+	cursor:pointer;
+	background-color:black;
+	opacity:0.7;
+	text-align:center;
+	color:white;
+	visibility:visible;
+}
+
+.cluster{
+	width:760px;
+	position:relative;
+	height:337px;
+	display:none;
+}
+
+.box {
+	width: 190px;
+	height: 190px;
+	float: left;
+	background-color: #0C034D;
+	color: white;
+	margin: 2.5px;
+	cursor: pointer;
+	padding: 10px 10px 0 0;
+	position: relative;
+	}
+	
+.list {
+	width: 330px;
+	height: 330px;
+	background-color: #B1B1B1;
+	text-decoration: none;
+	float: left;
+	margin: 2.5px;
+	color: #0C034D;
+	position: relative;
+	}
+
+.label {
+	text-align: right;
+	margin: 0px;
+	font-size: 20px;
+	}
+	
+.count {
+	font-size: 166px;
+	margin: -37px 0px 0px -8px;
+	}
+
+.triangle {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border: 25px solid #000;
+	border-color: transparent white white transparent;
+	right: 0px;
+	bottom: 0px;
+	}
+	
+.triangle2 {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border: 25px solid #000;
+	border-color: white white transparent transparent;
+	right: 0px;
+	top: 0px;
+	}
+	
+.block {
+	margin: 15px 10px;
+	}
+	
+.current{
+	display:block;
+}
+
+.intro{
+	border-bottom:solid 1px;
+}
+
+#dframe{
+	position:relative;
+	display:none;
+	margin-top:15px;
+	color: #999;
+	border: none;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	height:0;
+	width:0;
+}

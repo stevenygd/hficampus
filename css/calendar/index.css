@@ -1,0 +1,94 @@
+/* CSS Document */
+/* by LXS */
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+	}
+
+body {
+	font-family: light;
+	}
+	
+p {
+	margin: 0;
+	}
+	
+#add_form > p {
+	color: #0C034D;
+	}
+	
+input, textarea {
+	border: none;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	}
+
+input {
+	width: 225px;
+	}
+	
+textarea {
+	width: 325px;
+	height: 100px;
+	}
+	
+.form {
+	display: none;
+	position: absolute;
+	width: 350px;
+	height: auto;
+	background-color: rgba(206, 204, 204, 0.85);
+	top: 151px;
+	left: 260px;
+	padding: 10px;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	z-index: 10;
+	}
+	
+#add_events {
+	position: absolute;
+	left: 190px;
+	}
+	
+#add_form {
+	background-color: rgba(204, 203, 203, 0.75);
+	}
+		
+.content {
+	color: #0C034D;
+	margin: 6px 10px;
+	font-size: 15px;
+	}
+	
+.label {
+	font-family: regular;
+	color: black;
+	font-size: 13px;
+	}
+	
+.close {
+	font-family: regular;
+	text-align: right;
+	cursor: pointer;
+	}
+	
+#close1 {
+	position: absolute;
+	top: 0;
+	right: 6px;
+	}
+
+#submit {
+	display: inline-block;
+	margin: 0 0 0 300px;
+	}
+
+#submit:hover {
+	cursor: pointer;
+	color:red;		
+	}
+	
