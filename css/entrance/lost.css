@@ -1,0 +1,135 @@
+/* CSS Document */
+/*by LXS*/    
+/*从top开始定义，要有层次结构，要不很难改*/
+html, body{
+	font-family: regular;
+	color: #0C034D;
+    height:98%;
+	position: relative;
+	}
+	
+.center {
+	text-align: center;
+	}
+
+.bottom {
+    position: fixed;
+    bottom: 10px;
+    }
+
+/**********************************/	
+/*定义entrance里面的form,类enform*/
+/*********************************/
+form.enform {
+	position: relative;
+	margin: 0 auto;
+	padding:0;
+	width: 514px;
+	height:auto;
+	border:none;
+	}
+
+/*form(.enform)下的div.类endiv*/
+.enform > div.endiv {
+	position: relative;
+	width: 100%;
+	height: 25px;
+	padding: 0;
+	margin: 8px auto;
+	vertical-align:middle;
+	border:none;
+	}
+	
+/*form(.enform)下div(endiv)下的label和input(text or password)*/
+form.enform > div.endiv > label {
+	position: absolute;
+	z-index: 1;
+	font-size: 10px;
+	bottom: 6px;
+	}
+
+form.enform > div.endiv > input {
+	position: relative;
+	left: 225px;
+	width: 150px;
+	color: #999;
+	border: none;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	}
+
+
+/*form(.enform)下submit input*/
+form.enform input.ensubmit {
+	position: relative;
+	bottom: 0;
+	right: 0;
+	height: 46px;
+	width: 80px;
+	border: none;
+    background-color: transparent;
+	cursor: pointer;
+	font-size: 22px;
+	color: #0C034D;
+	right: 49px;
+	margin: 0 auto 0 400px;
+	font-family: medium;
+	padding: 0;
+    }
+
+#back {
+	left: -45px;
+	margin: 0px;
+	}
+/*********************************/	
+/*           end enform          */
+/*********************************/
+
+/*错误信息样式*/
+.enerr {
+    color: red;
+    font-size: 10px;
+    }
+.enerr > p{
+	margin:0;
+	}
+
+/*login页面的其他样式*/
+/*
+.login_box {
+	position: absolute;
+	z-index: 1;
+	margin-left: 8px;
+	margin-top: 2px;
+	}
+*/
+
+/*对标题的定义要用h1标签不要用p,因为p是文段*/
+h1 {
+    margin: 0 auto 32px;
+	font-weight:100;
+	font-family: regular;
+	width: 521px;
+	font-size: 40px;
+	}
+	
+h2 {
+	font-family: light;
+	margin: 58px auto 33px;
+	font-size: 25px;
+	width: 514px;
+	}
+	
+span {
+	font-family:bold;
+	}
+	
+.err {
+	color: red;
+	font-size: 10px;
+	}
+	
+.err > p {
+	margin: 0;
+	}
+
+	

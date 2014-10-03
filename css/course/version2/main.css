@@ -1,0 +1,57 @@
+/* CSS Document */
+/*by StevenY*/
+
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+html{
+	padding:0;
+	margin:0;
+}
+
+body {
+	margin:0;
+	padding:0 2%;
+	height:100%;
+	width:100%;
+	font-family: light;
+	position:relative;
+	background-color:rgb(240,240,240);
+}
+
+#header{
+	position:relative;
+	width:90%;
+	height:350px;
+}
+
+#header > img{
+	width:100%;
+	height:250px;
+}
+
+#main{
+	width:90%;
+	height:auto;
+	vertical-align:top;
+}
+
+.themes {
+	float:left;
+	width:23%;
+	height:300px;
+	padding-right:2%;
+	text-decoration:none;
+}
+
+.theme_img{
+	width:100%;
+	height:150px;
+}
+
+theme_text{
+	width:100px;
+	height:150px;
+	overflow:hidden;
+}

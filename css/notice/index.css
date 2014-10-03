@@ -1,0 +1,226 @@
+/* CSS Document */
+/*Font*/
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+
+@font-face {
+	font-family: medium;
+	src:url('/font/Din/DINPro-Medium.otf');
+	}
+
+@font-face {
+	font-family: regular;
+	src:url('/font/Din/DINPro-Regular.otf');
+	}
+
+/*Layout*/
+body{
+	padding:50px;
+	font-family: light;
+	color: white;
+}
+
+h1,p{
+	margin: 0;
+	}
+
+h1 {
+	color: #0c034d;
+	font-family: regular;
+}
+
+h3 {
+	color: #0c034d;
+	font-family: light;
+	width:100%;
+	top: 50px;
+}
+
+h3 > span {
+	font-family: medium;
+}
+
+h6 {
+	font-family: regular;
+	}
+	
+#middle{
+	position:relative;
+	float:left;
+	background-color: #0c034d;
+	width: 300px;
+	height: 400px;
+	color:white;
+}
+
+.right{
+	width: 300px;
+	height: 400px;
+	background-color: #B1B1B1;
+	text-decoration: none;
+	float: left;
+	color: #0C034D;
+	margin: 0 0 0 10px;
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+
+.triangle {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border: 25px solid #000;
+	border-color: transparent white white transparent;
+	right: 0px;
+	bottom: 0px;
+	}
+
+.triangle3 {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border: 25px solid #000;
+	border-color: transparent transparent white white;
+	left: 0px;
+	bottom: 0px;
+	}
+
+.mini {
+	position: absolute;
+	background-color: red;
+	height: 21px;
+	width: 5px;
+	left: 0px;
+	display: none;
+	}
+	
+.create {
+	width: 65px;
+	height: 85px;
+	display: block;
+	margin: 385px 0px 0px 282px;
+	position: absolute;
+	cursor: pointer;
+	}
+	
+.create > p {
+	position: relative;
+	left: 38px;
+	top: -12px;
+	color: #0C034D;
+	}
+	
+/*Gorups*/
+#groups{
+	padding-left: 15px;
+	padding-right: 27px;
+}
+
+.group{
+	border-bottom: solid 1px white;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.group:hover{
+	cursor:pointer;
+	color: red;
+}
+
+.num_new{
+	font-size:50px;
+}
+
+
+/*Notice Block*/
+.notice_block{
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+	padding: 15px;
+}
+
+.notice_block >* {
+	width:100%;
+}
+
+h6 {
+	font-weight:normal;
+	font-family:regular;
+	font-size:18px;
+	padding:0;
+	margin: 10px 0 0 0;
+}
+
+.title{
+	font-weight:normal;
+	font-family:medium;
+	padding:0;
+	margin:0;
+	width: 274px;
+}
+
+.time {
+	color: white;
+}
+/* add notice*/
+
+input, textarea {
+	border: none;
+	box-shadow: 0.5px 0.5px 4px 1px rgba(153, 153, 153, 0.53);
+	margin: 0 0 10px 0;
+	}
+
+.text {
+	width: 274px;
+	height: 227px;
+	}
+	
+.add_info {
+	margin: 10px;
+	position: relative;
+	}
+
+.add_submit {
+	cursor: pointer;
+	margin: 0px 228px;
+	}
+
+.previous {
+	position: absolute;
+	right: 8px;
+	top: 2px;
+	cursor: pointer;
+	}
+	
+.previous:hover{
+	color: red;
+	}
+		
+.next {
+	cursor: pointer;
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	}
+	
+.next:hover{
+	color: red;
+	}
+/*Other important classes*/
+.hide{
+display:none;
+}
+
+.show{
+display:block;
+}
+
+.block{
+	display:block;
+}

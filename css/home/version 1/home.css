@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+/*LXS*/
+/*字体每一个页面都要load...所以可以考虑把字体分开一个单独的文件*/
+@font-face {
+	font-family:avenirul;
+	src:url('/font/AvenirNextLTPro-UltLt.otf');
+	}
+@font-face {
+	font-family:New;
+	src:url('/font/GOTHIC.TTF');
+	}
+@font-face {
+    font-family:bold;
+    src:url('/font/GOTHICB.TTF');
+    }
+
+html, body {
+	height: 100%;
+	width: 100%;
+    color: white;
+	font-family:Avenir Next Ultra Light,avenirul,New,Helvetica;;
+	font-weight:100;
+    }
+
+p {
+	color:rgb(187,226,252);
+}
+
+a {
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+.header {
+	position: relative;
+	background-color: #999;
+	height: 25px;
+	width: 100%;
+	}
+	
+.main {
+	width: 600px;
+	height: 400px;
+	color: white;
+	padding: 150px 200px;
+    }
+
+.welcome {
+    color: blue;
+    }
+    
+.col1 {
+    float: left;
+    width: 260px;
+    height: 310px;
+    }
+
+.block1 {
+	background-image: url('/images/home/block1.jpg');
+	width: 250px;
+	height: 300px;
+    margin: 5px 5px;
+	}
+
+.col2 {
+    float:left;
+    width: 160px;
+    height: 310px;
+    }
+    
+.block2 {
+	background-color:#39F;
+	width: 150px;
+	height: 145px;
+	margin: 5px 5px 10px;
+    }
+
+html, body, h2, p {
+	padding: 0px;
+	margin: 0px;
+	font-weight:100;
+	}

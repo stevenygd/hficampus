@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+/*by LXS*/    
+/*从top开始定义，要有层次结构，要不很难改*/
+html, body{
+	font-family: regular;
+	color: #0C034D;
+    height:98%;
+	position: relative;
+	}
+	
+.center {
+	text-align: center;
+	}
+
+.bottom {
+    position: fixed;
+    bottom: 10px;
+    }
+
+/*form styles has moved to account.css*/
+
+/*login页面的其他样式*/
+/*
+.login_box {
+	position: absolute;
+	z-index: 1;
+	margin-left: 8px;
+	margin-top: 2px;
+	}
+*/
+
+/*对标题的定义要用h1标签不要用p,因为p是文段*/
+h1 {
+    margin: 0 auto 32px;
+	font-weight:100;
+	font-family: regular;
+	width: 521px;
+	font-size: 40px;
+	}
+	
+h2 {
+	font-family: light;
+	margin: 58px auto 33px;
+	font-size: 25px;
+	width: 514px;
+	}
+	
+h6 {
+	color:#666;
+    font-family: bold;
+    font-size: 25px;
+    margin: 5px auto;
+    }
+
+span {
+	font-family:bold;
+	}
+	
+.err {
+	color: red;
+	font-size: 10px;
+	}
+	
+.err > p {
+	margin: 0;
+	}
+
+.next {
+	display:none;
+	}
+	
+#next, #send {
+	right: -230px;
+	}
+
+#submit {
+	display: none;
+	right: 33px;
+	}
+	
+#sub {
+	margin:0 auto;
+	width: 520px;
+	opacity: 0;
+	}
+	
+#info {
+	display: none;
+	margin: 20px auto 8px;
+	font-size: 12px;
+	}
+	
+.hide {
+	display: none;
+	}
+	
+	

@@ -1,0 +1,228 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+.fleft {float: left;}
+.fright {float: right;}
+.inline {display: inline;}
+.hidden {display: none;}
+
+body {
+	font-family: Arial;
+	font-size: 63%;
+}
+
+@outer-padding: 0 20px;
+
+@header-background-color: #000000;
+@header-height : 40px;
+#header {
+	background-color: @header-background-color; 
+	height: @header-height; 
+	padding: @outer-padding;
+
+    @toolBar-font-size : 1.4em;
+	#toolBar {
+	    .button {
+			background: none;
+			border: 0;
+			color: #ffffff;
+			font-size: @toolBar-font-size;
+			height: @header-height;
+			line-height: @toolBar-font-size;
+			padding: 5px 5px;
+
+			&:hover {
+				background: @header-background-color + #333333;
+			}
+		}
+	}
+
+	#searchBar {
+		padding: 5px 5px;
+
+        @searchBar-innerHeight: 28px;
+		#keyword {
+			border: 1px solid #cccccc;
+			font-size: @toolBar-font-size;
+			/*height: @searchBar-innerHeight;*/
+		}
+
+		#search {
+			#toolBar .button;
+			border:1px solid #ffffff;
+			height: @searchBar-innerHeight;
+			margin: 0;
+		}
+	}
+}
+
+#infoBar {
+	border-bottom:1px solid #888888; 
+	height: 25px;
+	margin-bottom: 10px;
+	padding: @outer-padding;
+	padding-top: 10px;
+	padding-bottom: 15px;
+
+	#currentSet-name {
+		font-size:2.5em;
+		margin-right: 20px;
+	}
+
+	#currentSet-path {
+		font-size: 1.4em;
+	}
+}
+
+#list {
+	font-size: 1.5em;
+	padding: @outer-padding;
+
+	#details {
+		width: 100%;
+
+		.titles {
+			padding-bottom: 15px;
+		}
+
+		.row {
+			.titles;
+
+			&:hover {
+				background-color: #cccccc;
+			}
+		}
+
+		.over {
+			background-color: #cccccc;
+		}
+
+		.check {
+			
+		}
+	}
+}
+
+#emptyList {
+	font-size: 2.0em;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#uploadBox {
+	width: 30%;
+
+	.buttons {
+		text-align: right;
+		margin-top: 15px;
+
+		.ok {
+			background-color: #000000;
+			border: 0;
+			color: #ffffff;
+		}
+
+		.cancel {
+			background-color: #ffffff;
+			border: 1px solid #000000;
+		}
+	}
+}
+
+#frontend {
+	#mask {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+
+	.contextMenu {
+		background-color: #ffffff;
+		border: 2px solid #000000;
+		padding: 5px 0;
+		position : absolute;
+		width: 100px;
+		z-index : 1000;
+
+		.contextMenuItems {
+			.contextMenuItem {
+				font-size: 1.4em;
+				padding: 5px 15px 5px;
+			}
+
+			.contextMenuButton {
+				padding-bottom: 10px;
+
+				&:hover {
+					cursor: default;
+					background-color: #cccccc;
+				}
+				
+			}
+		}
+	}
+
+	.modal {
+		background-color: #ffffff;
+		border: 2px solid #000000;
+		font-size: 1.4em;
+		padding: 10px;
+		position: absolute;
+		width: 300px;
+		z-index: 2000;
+
+		.dialog {
+			.info {
+				margin-bottom: 15px;
+			}
+
+			.inputField {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.processing {
+				text-align: center;
+			}
+
+			.error {
+				margin-top: 10px;
+				.message {
+					margin-bottom: 10px;
+					color: #ff0000;
+				}
+				.close{
+					background-color: #ffffff;
+					border: 1px solid #000000;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
+			.buttons {
+				text-align: right;
+				margin-top: 15px;
+
+				.ok {
+					background-color: #000000;
+					border: 0;
+					color: #ffffff;
+				}
+
+				.cancel {
+					background-color: #ffffff;
+					border: 1px solid #000000;
+				}
+			}
+		}
+	}
+}
+
+#backend {
+	/*display: none;*/
+}

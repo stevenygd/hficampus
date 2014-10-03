@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title><?php echo $title;?></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css"  media="screen"/>
+	<link href="/css/bootstrap/flat-ui.css" rel="stylesheet"/>
+	<link href="/css/bootstrap/font-awesome.min.css" rel="stylesheet"/>
+	<link href="/css/bootstrap/buttons.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/css/layout/styles.css" />
+	<link rel="stylesheet" type="text/css" href="/css/layout/home.css" />
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/layout/responsive-nav.js"></script>
+    <script type="text/javascript" src="http://channel.sinaapp.com/api.js"></script>
+	<script>
+		var site_url = "<?php echo site_url();?>";
+		var base_url = "<?php echo base_url();?>";
+		var uid = "<?php echo $uid;?>";
+		var channelPrefix = "<?php echo CHANNEL_PREFIX;?>";
+		
+		//get channel information
+		function generate_channel_url(php_data){
+			if (php_data.length == 0){
+				//get from cookie
+				return $.cookie('hfi_channelURL');
+			}else{
+				//update cookie
+				$.cookie('hfi_channelURL', php_data); 
+				return php_data;
+			}
+		};
+
+		var channelURL = generate_channel_url("<?php echo $channelURL;?>");
+		var error = false;
+		window.openChannel(channelURL);	
+		
+		function openChannel(channelURL){
+			channel = new sae.Channel(channelURL);
+			channel.onopen = function(){
+				if (typeof(onopen)=='function'){
+					onopen();
+				}
+			}
+			channel.onclose = function(){
+				if (typeof(onclose)=='function'){
+					onclose();
+				}			
+			}
+			
+			channel.onerror = function(){
+				if (typeof(onerror)=='function'){
+					onerror();
+				}
+			}
+			
+			channel.onmessage = function(output){
+				if (typeof(onmessage) == 'function'){
+					onmessage(output);
+				}
+			}
+		};
+		
+		function onopen(){
+			//alert('Channel Successfully Opened!');//for test
+			/*neccessary for temparary resons*/
+			url = site_url + "home/api/channel_connected";
+			$.post(url,{'from':channelPrefix+uid},function(data,status){});
+			$("#mark").hide();
+		};
+		
+		function onerror(){
+			alert('Something Wrong');
+			var error = true;
+			window.location.reload();
+		};
+
+		function onclose(){
+			//alert('Channel Closed!');
+			$("#mark").show();
+			url = site_url + "home/api/channel_closed";
+			$.post(url,{'from':channelPrefix+uid},function(data,status){
+				if (status == "success" && data.code == 0){
+					if (error !== true){
+						openChannel(data.channelURL);
+					}
+				}else{
+					alert(status + data.code + data.message);
+				}
+			});
+		};
+		
+	</script>
+
+</head>
+<body>
+	<div role="navigation" id="foo" class="nav-collapse">
+      <ul>
+        <li class="active"><a href="<?php echo site_url('home');?>">Home</a></li>
+        <li><a href="<?php echo site_url('course');?>">Course</a></li>
+        <li><a href="<?php echo site_url('calendar');?>">Calendar</a></li>
+        <li><a href="<?php echo site_url('notice');?>">Notice</a></li>
+        <li><a href="<?php echo site_url('chatrooms');?>">Message</a></li>
+		<?php if (isset($ulib) && ($ulib!==FALSE)):?>
+            <li><a href="<?php echo site_url('ulibrary/welcome');?>">U Library</a></li>
+        <?php endif;?>
+        <li><a href="<?php echo site_url('account/logout');?>">Log Out</a></li>
+      </ul>
+    </div>
+	<div id="mark" class="main">
+	    <div id="mark_center" class="well well-large well-transparent lead" style="background: white;">
+       		<i class="icon-spinner icon-spin icon-4x"></i> Connecting to the Channel
+        </div>
+   	</div>
+    <div role="main" class="main">
+        <a href="#nav" class="nav-toggle">Menu</a>
+    	<?php echo $yield;?>
+    </div>
+	<script src="/js/bootstrap/buttons.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/bootstrap/bootstrap-select.js"></script>
+    <script src="/js/bootstrap/bootstrap-switch.js"></script>
+    <script src="/js/bootstrap/flatui-checkbox.js"></script>
+    <script src="/js/bootstrap/flatui-radio.js"></script>
+    <script src="/js/bootstrap/jquery.tagsinput.js"></script>
+    <script src="/js/bootstrap/jquery.placeholder.js"></script>
+    <script>
+      var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+    </script>
+</body>
+</html>

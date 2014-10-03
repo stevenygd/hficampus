@@ -1,0 +1,53 @@
+/* CSS Document */
+/*by LXS*/
+html, body{
+	font-family: regular;
+	color: #0C034D;
+    height:98%;
+	position: relative;
+	}
+	
+h1 {
+    margin: 0 auto 32px;
+	font-weight:100;
+	font-family: regular;
+	width: 521px;
+	font-size: 40px;
+	}
+	
+h2 {
+	font-family: light;
+	margin: 58px auto 33px;
+	font-size: 25px;
+	width: 514px;
+	}
+
+h4 {
+	font-family: regular;
+	margin: 58px auto 33px;
+	font-size: 25px;
+	width: 514px;
+	}
+	
+h5 {
+	width: 521px;
+    margin: 0 auto 32px;
+	}
+	
+.resend {
+	font-family: regular;
+	margin: 58px auto 33px;
+	font-size: 25px;
+	width: 514px;
+	color: #0C034D;
+	}
+
+a {
+	color: #0C034D;
+	text-decoration: none;
+	}
+
+.err {
+	color: red;
+	size: 10px;
+	}

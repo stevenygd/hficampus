@@ -1,0 +1,313 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.inline {
+  display: inline;
+}
+.hidden {
+  display: none;
+}
+body {
+  font-family: Arial;
+  font-size: 63%;
+}
+#header {
+  background-color: #000000;
+  height: 40px;
+  padding: 0 20px;
+}
+#header #toolBar .button {
+  background: none;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.4em;
+  height: 40px;
+  line-height: 1.4em;
+  padding: 5px 5px;
+}
+#header #toolBar .button:hover {
+  background: #333333;
+}
+#header #searchBar {
+  padding: 5px 5px;
+}
+#header #searchBar #keyword {
+  border: 1px solid #cccccc;
+  font-size: 1.4em;
+  /*height: @searchBar-innerHeight;*/
+
+}
+#header #searchBar #search {
+  background: none;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.4em;
+  height: 40px;
+  line-height: 1.4em;
+  padding: 5px 5px;
+  border: 1px solid #ffffff;
+  height: 28px;
+  margin: 0;
+}
+#header #searchBar #search:hover {
+  background: #333333;
+}
+#infoBar {
+  border-bottom: 1px solid #888888;
+  height: 25px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+#infoBar #currentSet-name {
+  font-size: 2.5em;
+  margin-right: 20px;
+}
+#infoBar #currentSet-path {
+  font-size: 1.4em;
+}
+#list {
+  font-size: 1.5em;
+  padding: 0 20px;
+}
+#list #details {
+  width: 100%;
+}
+#list #details .titles {
+  padding-bottom: 15px;
+}
+#list #details .row {
+  padding-bottom: 15px;
+}
+#list #details .row:hover {
+  background-color: #cccccc;
+}
+#list #details .over {
+  background-color: #cccccc;
+}
+#emptyList {
+  font-size: 2.0em;
+  margin-top: 20px;
+  text-align: center;
+}
+#uploadBox {
+  width: 30%;
+}
+#uploadBox .buttons {
+  text-align: right;
+  margin-top: 15px;
+}
+#uploadBox .buttons .ok {
+  background-color: #000000;
+  border: 0;
+  color: #ffffff;
+}
+#uploadBox .buttons .cancel {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+#frontend #mask {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+#frontend .contextMenu {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 5px 0;
+  position: absolute;
+  width: 100px;
+  z-index: 1000;
+}
+#frontend .contextMenu .contextMenuItems .contextMenuItem {
+  font-size: 1.4em;
+  padding: 5px 15px 5px;
+}
+#frontend .contextMenu .contextMenuItems .contextMenuButton {
+  padding-bottom: 10px;
+}
+#frontend .contextMenu .contextMenuItems .contextMenuButton:hover {
+  cursor: default;
+  background-color: #cccccc;
+}
+#frontend .modal {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  font-size: 1.4em;
+  padding: 10px;
+  position: absolute;
+  width: 300px;
+  z-index: 2000;
+}
+#frontend .modal .dialog .info {
+  margin-bottom: 15px;
+}
+#frontend .modal .dialog .inputField {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#frontend .modal .dialog .processing {
+  text-align: center;
+}
+#frontend .modal .dialog .error {
+  margin-top: 10px;
+}
+#frontend .modal .dialog .error .message {
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+#frontend .modal .dialog .error .close {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#frontend .modal .dialog .buttons {
+  text-align: right;
+  margin-top: 15px;
+}
+#frontend .modal .dialog .buttons .ok {
+  background-color: #000000;
+  border: 0;
+  color: #ffffff;
+}
+#frontend .modal .dialog .buttons .cancel {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+#backend {
+  /*display: none;*/
+
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+/* by LXS */
+
+@font-face {
+	font-family: light;
+	src:url('/font/Din/DINPro-Light.otf');
+	}
+	
+@font-face {
+    font-family: medium;
+    src:url('/font/Din/DINPro-Medium.otf');
+    }
+		
+.light {
+	font-family: light;
+	}
+	
+html, body {
+	margin: 0;
+	font-family: medium;
+	background-color: black;
+	width: 100%;
+	height: 600px;
+	color: white;
+	font-size: 16px;
+	}
+	
+#uname {
+	padding: 60px 0 60px 15%;
+	}
+
+.box {
+	padding: 4px 0 4px 15%;
+	}
+	
+a {
+	color: white;
+	text-decoration: none;
+	}
+
+.red {
+	color: red;
+	}
+
+.mini {
+	position: absolute;
+	background-color: red;
+	height: 21px;
+	width: 5px;
+	left: 0px;
+	display: none;
+	}
+
+.clicked {
+	color: black;
+	}
+
+.logout {
+	font-family: light;
+	margin: 100px 0 0 0;
+	}
